@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CustomStringMethodsRunner",
+            "request": "launch",
+            "mainClass": "CustomStringMethodsRunner",
+            "projectName": "u2t7-string-methods-jasong283_e71c7e75"
+        },
+        {
+            "type": "java",
+            "name": "U2T7_P2Runner",
+            "request": "launch",
+            "mainClass": "U2T7_P2Runner",
+            "projectName": "u2t7-string-methods-jasong283_e71c7e75"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "U2T7",
+            "request": "launch",
+            "mainClass": "U2T7",
+            "projectName": "u2t7-string-methods-jasong283_e71c7e75"
+        },
+        {
+            "type": "java",
+            "name": "U2T7_P2",
+            "request": "launch",
+            "mainClass": "U2T7P2.U2T7_P2",
+            "projectName": "u2t7-string-methods-jasong283_e71c7e75"
+        },
+        {
+            "type": "java",
+            "name": "U2T7_P2Runner",
+            "request": "launch",
+            "mainClass": "U2T7P2.U2T7_P2Runner",
+            "projectName": "u2t7-string-methods-jasong283_e71c7e75"
+        },
+        {
+            "type": "java",
+            "name": "testRunner",
+            "request": "launch",
+            "mainClass": "testRunner",
+            "projectName": "u2t7-string-methods-jasong283_e71c7e75"
+        }
+    ]
+}
