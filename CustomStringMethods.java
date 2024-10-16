@@ -33,7 +33,6 @@ public class CustomStringMethods {
   public String funnyString(String str, int idx) {
     String index = str.substring(idx, idx + 1);
     return str = index + str + index;
-    
   }
 
   /**Client provides myString and the method returns a String that represents mystring
@@ -76,11 +75,8 @@ public class CustomStringMethods {
       return myString;
     } else {
       String str = myString.substring(removeIdx, removeIdx + 1);
-      return myString = myString.replace(str, "");
+      return myString = myString.replaceFirst(str, "");
     }
-
-    
-
 
   }
 
@@ -98,7 +94,14 @@ public class CustomStringMethods {
             this method would return the String "ghostBOO!" (since searchStr is not found in orig).
   */
   public String insertAt(String orig, String insertText, String searchStr) {
-    
+    int search = orig.indexOf(searchStr);
+    if(search <= -1) {
+      return orig + insertText;
+    } else {
+      String x = orig.substring(0, search); 
+      String y = orig.substring(search, orig.length());
+      return x + insertText + y;
+    }
   }
 
   /**Client provides myString and the method returns a new String with the last numToCap characters in
@@ -113,7 +116,14 @@ public class CustomStringMethods {
              "GigantiC!!"
   */
   public String endUp(String myString, int numToCap){
-    
+    if(numToCap >= myString.length()) {
+      return myString.toUpperCase();
+    } else {
+      String x = myString.substring(0, myString.length() - numToCap);
+      String y = myString.substring(myString.length() - numToCap);
+      y = y.toUpperCase();
+      return x + y;
+    }
   }
 
   /**Client provides myString and this method should return a String with all characters in myString
@@ -127,6 +137,16 @@ public class CustomStringMethods {
             because the first letter of myString, "h", is a lowercase letter.
   */
   public String yellOrWhisper(String myString) {
-    
+    String x = myString.substring(0, 1);
+    String y = x.toUpperCase();
+    String z = x.toLowerCase();
+
+    if(x.contains(y)) {
+      return myString.toUpperCase();
+    } else if (x.contains(z)) {
+      return myString.toLowerCase();
+    } else {
+      return "The first character is not a letter.";
+    }
   }
 }
